@@ -19,7 +19,7 @@ func main() {
 	collection = client.Database("cinema").Collection("movies")
 	r := mux.NewRouter()
 	r.HandleFunc("/movies", getMovies).Methods("GET")
-
+	ht
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
